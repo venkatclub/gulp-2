@@ -3,26 +3,28 @@ bower and gulp tested .. gulp worked fine ..
 
 ##gulpfile.js
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sass2 = require('gulp-sass');
-var watch = require('gulp-watch');
+---
+
+to run this 
+
+1.  npm install
+2.  bower install
 
 
-gulp.task('sass',function(){
-    return gulp.src('./bower_components/bootstrap/scss/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./app/inc/css'));
-});
+it will install based on package.json and bower.json
+-----
 
-gulp.task('sass2',function(){
-    return gulp.src('./dev/scss/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./app/inc/css'));
-});
+if node not installed install it.
 
+if bower not installed install it 
 
-gulp.task('watch',function(){
-    gulp.watch('./dev/scss/**/*.scss', [sass2]);
-    gulp.watch('./bower_components/bootstrap/scss/**/*.scss', [sass]);
-});
+npm install -g bower 
+
+if gulp not installed install it globally 
+
+npm install -g gulp 
+
+and install it locally 
+
+npm install gulp 
+(not needed, as mention in package.json )

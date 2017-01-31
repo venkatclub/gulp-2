@@ -13,11 +13,20 @@ gulp.task('sass',function(){
 gulp.task('sass2',function(){
     return gulp.src('./app/assets/scss/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./app/inc/css'));
+    .pipe(gulp.dest('./app/assets/css'));
 });
 
 
 gulp.task('watch',function(){
     gulp.watch('./app/assets/scss/**/*.scss', [sass2]);
     gulp.watch('./bower_components/bootstrap/scss/**/*.scss', [sass]);
+});
+
+// -- this kind of sequence setps ['sass', 'sass2'] may not work better with watch task, as it run once ..
+// gulp.task('watch', ['sass', 'sass2'], function(){
+// //   console.log('done!');
+// });
+
+gulp.task('default', ['sass', 'sass2'], function(){
+  console.log('done!');
 });
