@@ -13,7 +13,7 @@ to run this
 
 it will install based on package.json and bower.json
 
-after than just run 
+after then just run 
 
 gulp 
 
