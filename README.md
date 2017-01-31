@@ -12,6 +12,12 @@ to run this
 
 
 it will install based on package.json and bower.json
+
+after than just run 
+
+gulp 
+
+it will run based on default task created in gulpfile.js 
 -----
 
 if node not installed install it.
