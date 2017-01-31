@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap with bower",
+  "authors": [
+    "venkat <bhvreddy88@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "no",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
